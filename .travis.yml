@@ -10,7 +10,6 @@ before_install:
 - npm install -g hexo-cli
 # 解密id_rsa_blog.enc 输出到.ssh/文件夹下，命名为id_rsa
 - openssl aes-256-cbc -K $encrypted_1350120bfcc9_key -iv $encrypted_1350120bfcc9_iv
-  -in .travis/id_rsa.enc -out .travis/id_rsa -d
 # 设置id_rsa文件权限
 - chmod 600 ~/.ssh/id_rsa
 # 添加ssh密钥
