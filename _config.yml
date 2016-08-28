@@ -85,5 +85,5 @@ admin:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/funchs/funchs.github.io.git
+  repo: git@github.com:funchs/funchs.github.io.git
   branch: master
