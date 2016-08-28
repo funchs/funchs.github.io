@@ -1,40 +1,22 @@
 language: node_js
-sudo: false
-node_js:
-- "4"  # nodejs的版本
 branches:
   only:
   - hexo
-cache:
-  directories:
-    - node_modules
 before_install:
-- export TZ='Asia/Shanghai'  # 设置时区
-# 解密id_rsa_blog.enc 输出到.ssh/文件夹下，命名为id_rsa
-- openssl aes-256-cbc -K $encrypted_1350120bfcc9_key -iv $encrypted_1350120bfcc9_iv
-# 设置id_rsa文件权限
-- chmod 600 ~/.ssh/id_rsa
-# 添加ssh密钥
-- eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa
-# 添加ssh配置文件
-- cp .travis/ssh_config ~/.ssh/config
-# 设置github账户信息
-- git config user.name "funchs"
-- git config user.email "eshore1258@163.com"
-install:
+- npm install -g hexo
 - npm install -g hexo-cli
+before_script:
+- git config --global user.name 'funchs'
+- git config --global user.email 'eshore1258@163.com'
+- sed -i'' "s~git@github.com:funchs/funchs.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/funchs/funchs.github.io.git~"
+  _config.yml
+install:
 - npm install
-# 执行的命令
 script:
-- npm run deploy
-#after_script:
-#- cd ./public
-#- git init
-#- git add .
-#- git commit -m "Update docs"
-#- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-#env:
-#  global:
-#  - GH_REF: https://github.com/funchs/funchs.github.io.git
-
+- hexo clean
+- hexo generate
+after_success:
+- hexo deploy
+env:
+  global:
+    secure: vimmMRNqKssJ0geAFDn+0jHW5qw07/ncjz0+dCz39Jq37dK8eApCYtPSQupJ+urRMdCaRAKWLM/tTx4HQcsqZZaMCKAMDalb6zqoG6AeQQ3pnrEuUnYUrzyYkifWszcgD3PxGwsz8bGtyhPcEO1coR7Io4qqIIyy3D+15N0ljPT6T/p0yTQrhhCWrVozlFXQmNK/lNtdH1n9wiljlIOFWaR/1+Dd2T2jAbJS5sGboN4EYRA+nT/PejXNUhKqZcPl5V/VhOKLBvct9cMuuaAIHoW+Sfaba/tOb5irnR0/IAxWYFY/YaiFnp09l4bSL69wZIPiajgNMsmmIxrug3iz1jst71By+qbrNpQN8FTm/javeAItuot8ngn2K7zDyzuVFqvxRvebYwrl5+nwF0F6FP8RLWm1B+O4kMusiJ5FQTUXXfyCuN04HYj0o0HNNQ8rQ0KMwCWE7a4UrASpooTNEVT+63uqcMWwRcgs9p736sMm+H1SQENGcJRBxS5YVed++1qV6nizQ/a1OC/6+7+7R2x4c/4QUXsX53HSVohCZY5k7v8OBDHJ60SJT8CZVE0aiDKU8SdcqC9FUYChamSFnzuqci6MKnp6p96bh3dEcj/mLQkUSquSAbJdHlY+mXyuAS4bizGky4ejknBMrrLwcKVO5tLzW2SddMyGZfTA0+U=
