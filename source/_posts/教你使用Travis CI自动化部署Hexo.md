@@ -95,4 +95,4 @@ env:
 >这里的REPO_TOKEN是变量名,在后面的配置文件中会用到.TOKEN是上面github生成的Token.
 
 ### 测试效果
-Push本地的代码至远程仓库，然后,在https://travis-ci.org看项目自动化执行.
+Push本地的代码至远程仓库，然后,在[Travis CI](https://travis-ci.org)看项目自动化执行.
