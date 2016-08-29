@@ -5,11 +5,11 @@ categories: [collect]
 date: 2016-08-28 16:29:48
 ---
 
-[TOC]
-
 原文参考:[手把手教你使用Travis CI自动部署你的Hexo博客到Github上](http://blog.csdn.net/woblog/article/details/51319364),[Travis CI自动化部署Hexo](https://segmentfault.com/a/1190000004714256#articleHeader3)
 
 这里记下,做个收藏,有版权问题.请及时联系.
+
+<!-- more -->
 
 ### 什么是Travis CI
 
