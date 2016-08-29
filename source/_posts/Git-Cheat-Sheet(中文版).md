@@ -28,7 +28,7 @@ Git Cheat Sheet 中文版
 
 ---
 
-###配置
+### 配置
 
 ##### 列出当前配置：
 ```
@@ -72,7 +72,7 @@ $ git config --global core.editor vi
 
 ---------
 
-###配置文件
+### 配置文件
 
 ##### Repository配置对应的配置文件路径[--local]：
 ```
@@ -91,7 +91,7 @@ $ git config --global core.editor vi
 
 ----------
 
-###创建
+### 创建
 
 ##### 复制一个已创建的仓库:
 
@@ -110,7 +110,7 @@ $ git init
 
 ---
 
-###本地修改
+### 本地修改
 
 ##### 显示工作路径下已修改的文件：
 ```
@@ -186,7 +186,7 @@ git stash drop
 ```
 
 ---
-###搜索
+### 搜索
 
 ##### 从当前目录的所有文件中查找文本内容：
 ```
@@ -199,7 +199,7 @@ $ git grep "Hello" v2.5
 ```
 
 ---
-###提交历史
+### 提交历史
 
 ##### 从最新提交开始，显示所有的提交记录（显示hash， 作者信息，提交的标题和时间）：
 ```
@@ -242,7 +242,7 @@ $ git reflog delete
 ```
 
 ---
-###分支与标签
+### 分支与标签
 
 ##### 列出所有的分支：
 ```
@@ -298,7 +298,7 @@ $ git tag -a <tag-name>
 ```
 
 ---
-###更新与发布
+### 更新与发布
 
 ##### 列出当前配置的远程端：
 ```
@@ -353,7 +353,7 @@ $ git push --tags
 ```
 
 ---
-###合并与重置(Rebase)
+### 合并与重置(Rebase)
 
 ##### 将分支合并到当前HEAD中：
 ```
@@ -412,7 +412,7 @@ squash <commit_id3>
 ```
 
 ---
-###撤销
+### 撤销
 
 ##### 放弃工作目录下的所有修改：
 ```
@@ -463,7 +463,7 @@ $ git commit -m "remove xyz file"
 
 ---
 
-##Git-Flow
+## Git-Flow
 
 ###索引
 * [安装](#安装)
@@ -475,7 +475,7 @@ $ git commit -m "remove xyz file"
 
 ---
 
-###安装
+### 安装
 
 - 你需要有一个可以工作的 git 作为前提。
 - Git flow 可以工作在 OSX, Linux 和 Windows之下
@@ -509,7 +509,7 @@ $ wget -q -O - --no-check-certificate https://github.com/nvie/gitflow/raw/develo
 ----
 
 
-###开始
+### 开始
 
 - 为了自定义你的项目，Git flow 需要初始化过程。
 - 使用 git-flow，从初始化一个现有的 git 库内开始。
@@ -522,7 +522,7 @@ git flow init
 ---
 
 
-###特性
+### 特性
 
 - 为即将发布的版本开发新功能特性。
 - 这通常只存在开发者的库中。
@@ -574,7 +574,7 @@ git flow feature track MYFEATURE
 ---
 
 
-###做一个release版本
+### 做一个release版本
 
 - 支持一个新的用于生产环境的发布版本。
 - 允许修正小问题，并为发布版本准备元数据。
@@ -617,7 +617,7 @@ git flow release finish RELEASE
 ---
 
 
-###紧急修复
+### 紧急修复
 
 紧急修复来自这样的需求：生产环境的版本处于一个不预期状态，需要立即修正。有可能是需要修正 master 分支上某个 TAG 标记的生产版本。
 
@@ -643,15 +643,8 @@ git flow hotfix finish VERSION
 ---
 
 
-###Commands
-<p align="center">
-    <img alt="Git" src="./Img/git-flow-commands.png" height="270" width="460">
-</p>
-<hr>
+### Commands
+![](https://github.com/flyhigher139/Git-Cheat-Sheet/raw/master/Img/git-flow-commands.png)
 
-###Git flow schema
-
-<p align="center">
-    <img alt="Git" src="Img/git-flow-commands-without-flow.png">
-</p>
-<hr>
+### Git flow schema
+![](https://github.com/flyhigher139/Git-Cheat-Sheet/raw/master/Img/git-flow-commands-without-flow.png)
