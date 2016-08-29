@@ -10,7 +10,7 @@ Git Cheat Sheet 中文版
 =====================
 
 >原文 [Git Cheat Sheet 中文版](https://github.com/flyhigher139/Git-Cheat-Sheet/blob/master/README.md)
-
+<!-- more -->
 ---------------------
 
 ### 索引
