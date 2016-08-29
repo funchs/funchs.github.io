@@ -1,8 +1,8 @@
 ---
-title:Git-Cheat-Sheet(中文版)
-tags:[]
-categories:[]
-date:2016-08-29 12:00:00
+title: Git-Cheat-Sheet(中文版)
+tags: []
+categories: []
+date: 2016-08-29 12:00:00
 ---
 
 
