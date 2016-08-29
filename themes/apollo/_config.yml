@@ -1,6 +1,7 @@
 menu:
     Blog: /
     Archive: /archives/
+    Tag: /tags/
     Weibo: http://weibo.com/540045660
     GitHub: https://github.com/funchs
     Rss: /atom.xml
