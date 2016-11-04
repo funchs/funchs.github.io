@@ -6,10 +6,10 @@ categories: [original]
 date: 2016-11-04 12:00:00
 ---
 
-##centos tar压缩与解压缩命令大全
+## centos tar压缩与解压缩命令大全
 管理centos服务器的时候常会对文件进行一些常规操作，除了ftp之外了解在ssh下必要的文件操作命令那也是必不可少的，以下摘录一些常用的文件操作命令:
 
-###文件操作:
+### 文件操作:
 ```shell
 ls #查看目录中的文件
 ls -F #查看目录中的文件
@@ -22,7 +22,7 @@ df ?h #查看磁盘剩余空间
 find / -name xxx -print #查找xxx文件
 ```
 
-###压缩与解压缩
+### 压缩与解压缩
 ```shell
 tar xvf wordpress.tar #解压tar格式的文件
 tar -tvf myfile.tar #查看tar文件中包含的文件&nbsp;
