@@ -1,6 +1,8 @@
 ---
-layout: post
 title: Ubuntu 16.04安装Java JDK
+tags: []
+categori: []
+date: 2018-04-10 12:00:00
 ---
 
 Java JDK有两个版本，一个开源版本Openjdk，还有一个oracle官方版本jdk。下面记录在Ubuntu 16.04上安装Java JDK的步骤。
