@@ -6,8 +6,6 @@ categories: [reprint]
 date: 2018-04-10 12:00:00
 ---
 
-### Ubuntu 16.04安装Java JDK
-
 Java JDK有两个版本，一个开源版本Openjdk，还有一个oracle官方版本jdk。下面记录在Ubuntu 16.04上安装Java JDK的步骤。
 
 ### 安装openjdk
@@ -30,7 +28,7 @@ $ sudo apt-get install openjdk-8-jdk
 $ java -version
 ```
 
-![java Ubuntu 16.04]({{ site.baseurl }}/images/2016/4/Screen Shot 2016-04-03 at 18.47.24.png)
+![java Ubuntu 16.04](/images/Screen_Shot_1.png)
 
 ### 安装oracle Java JDK
 
@@ -60,7 +58,7 @@ $ sudo apt-get install oracle-java8-installer
 
 安装过程中需要接受协议：
 
-![java Ubuntu 16.04]({{ site.baseurl }}/images/2016/4/Screen Shot 2016-04-03 at 18.52.11.png)
+![java Ubuntu 16.04](/images/Screen_Shot_2.png)
 
 查看java版本：
 
@@ -68,7 +66,7 @@ $ sudo apt-get install oracle-java8-installer
 $ java -version
 ```
 
-![java Ubuntu 16.04]({{ site.baseurl }}/images/2016/4/Screen Shot 2016-04-03 at 20.50.46.png)
+![java Ubuntu 16.04](/images/Screen_Shot_3.png)
 
 *****
 
@@ -78,7 +76,7 @@ $ java -version
 $ sudo update-alternatives --config java
 ```
 
-![java Ubuntu 16.04]({{ site.baseurl }}/images/2016/4/Screen Shot 2016-04-03 at 20.54.50.png)
+![java Ubuntu 16.04](/images/Screen_Shot_4.png)
 
 前面带星号的是当前正在使用的java版本，键入编号选择使用哪个版本。
 
