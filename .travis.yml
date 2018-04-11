@@ -2,10 +2,9 @@ language: node_js
 branches:
   only:
   - hexo
-# .travis.yml 配置
 cache:
   directories:
-    - node_modules
+  - node_modules
 before_install:
 - npm install -g hexo
 - npm install -g hexo-cli
@@ -23,4 +22,4 @@ after_success:
 - hexo deploy
 env:
   global:
-    secure: vimmMRNqKssJ0geAFDn+0jHW5qw07/ncjz0+dCz39Jq37dK8eApCYtPSQupJ+urRMdCaRAKWLM/tTx4HQcsqZZaMCKAMDalb6zqoG6AeQQ3pnrEuUnYUrzyYkifWszcgD3PxGwsz8bGtyhPcEO1coR7Io4qqIIyy3D+15N0ljPT6T/p0yTQrhhCWrVozlFXQmNK/lNtdH1n9wiljlIOFWaR/1+Dd2T2jAbJS5sGboN4EYRA+nT/PejXNUhKqZcPl5V/VhOKLBvct9cMuuaAIHoW+Sfaba/tOb5irnR0/IAxWYFY/YaiFnp09l4bSL69wZIPiajgNMsmmIxrug3iz1jst71By+qbrNpQN8FTm/javeAItuot8ngn2K7zDyzuVFqvxRvebYwrl5+nwF0F6FP8RLWm1B+O4kMusiJ5FQTUXXfyCuN04HYj0o0HNNQ8rQ0KMwCWE7a4UrASpooTNEVT+63uqcMWwRcgs9p736sMm+H1SQENGcJRBxS5YVed++1qV6nizQ/a1OC/6+7+7R2x4c/4QUXsX53HSVohCZY5k7v8OBDHJ60SJT8CZVE0aiDKU8SdcqC9FUYChamSFnzuqci6MKnp6p96bh3dEcj/mLQkUSquSAbJdHlY+mXyuAS4bizGky4ejknBMrrLwcKVO5tLzW2SddMyGZfTA0+U=
+  - secure: ab7Rfsz782N/pjVn10NWFBZgWPRSCgap1hUVOAykanTx9rief1j/C5qs3f9abQUwuGHaQi4w2Y0kyJg/P+Nb6n+hyMrS2Ih+ceGG8o/jHye0sEG34C6YAgQh00hg1Rw4RuKUkpymjnbchDhMWCaJTnlvW+bbAQvpwo4mDNSVZsZSIi6xhHvuLMVgEcgJfWCCdKLKeR0X3PpkVFDcuzZOXQ7b670eKXPmONEjeAdsG4bpiG/zbqxEvaqVRvvPtXi9TGPomOG0tDnUNknBsJzwijEqE+mi8FdM4N1LQ1bRLNSDoquVmT3tfvFXwZb98ORyI/tANp0Poxiw/kFAzvPM3R40J/ZoYAsGzaC48HB2DgwTxQhh2ISg+dHh/4ZvFTqFLN5wlv4/gAN1gBY2fo6zC/DGqCMtgpdR6ySy+fWvZwmGBPY9blf1Ee6oQQ+zta1kOeCsz2FjHc99N8S90w22EboG/5kIG2jZ2AbORQ47c6fCn0n5EHCUVa1Ob3GTZWhovDf0vuihUdNubljTSZAQ6OYJGsU9TGoYWcTBwdU6kZlUF9M8myi8EgZpU6n6CSbWSniEJgfK1rB0JlJfG1OLEcKNdRlxHxFgrl952VA0BEJXxrz2/RxCzbbjNdbNEtN+UKdE0YJ7C8aJg1GVN+yMjZSN2jNW5yUCKiCVWmlIH2Q=
